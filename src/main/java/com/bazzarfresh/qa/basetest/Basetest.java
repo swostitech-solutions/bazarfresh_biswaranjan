@@ -36,7 +36,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 
-import com.bazarfresh.qa.commonutility.WebEventListener;
+import com.bazzarfresh.qa.commonutility.WebEventListner;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -44,7 +44,7 @@ public class Basetest {
 	public static WebDriver driver;
 	 public static Properties prop;
 	 public static EventFiringWebDriver e_driver;
-	 public static WebEventListener eventListener;
+	 public static WebEventListner eventListener;
 	 public static ThreadLocal<WebDriver> tdriver=new ThreadLocal<WebDriver>();
 	 public int ThreadSleepTime=2000;
 	 public static JavascriptExecutor js;
@@ -99,7 +99,7 @@ public class Basetest {
 			driver=new EdgeDriver();
 		}
 		e_driver=new EventFiringWebDriver(driver);
-		eventListener=new WebEventListener();
+		eventListener=new WebEventListner();
 		e_driver.register(eventListener);
 		driver=e_driver;
 		

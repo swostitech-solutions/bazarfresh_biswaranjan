@@ -4,8 +4,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.bazarfresh.qa.Base.BaseTest;
-public class BazzarFreshLoginpage extends BaseTest {
+import com.bazzarfresh.qa.basetest.Basetest;
+
+
+public class BazzarFreshLoginpage extends Basetest {
       @FindBy(name="email")
       WebElement userName;
       

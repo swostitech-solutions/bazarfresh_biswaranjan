@@ -13,10 +13,12 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+import com.bazzarfresh.qa.basetest.Basetest;
+
 import io.qameta.allure.Step;
 
 
-public class Xls_Reader {
+public class Xls_Reader  extends Basetest {
 	public String path;
 	public FileInputStream fis = null;
 	public FileOutputStream fileOut = null;

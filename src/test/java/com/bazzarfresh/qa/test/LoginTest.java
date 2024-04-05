@@ -4,8 +4,9 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.bazarfresh.qa.commonutility.Xls_Reader;
+
 import com.bazzarfresh.qa.basetest.Basetest;
+import com.bazzarfresh.qa.commonutility.Xls_Reader;
 import com.bazzarfresh.qa.pages.BazzarFreshLoginpage;
 
 /**
@@ -30,7 +31,7 @@ public class LoginTest extends Basetest {
 	
 	@Test
 	public void VerifyLoginIntoApplication() {
-		Xls_Reader reader=new Xls_Reader("C:\\Users\\vicky\\eclipse-workspace\\bazarfreshframework\\src\\main\\java\\com\\bazzarfresh\\qa\\testdata\\bazarfreshdata.xlsx");
+		Xls_Reader reader=new Xls_Reader("V:\\git_automation\\bazarfresh_biswaranjan\\src\\main\\java\\com\\bazzarfresh\\qa\\testdata\\bazarfreshdata.xlsx");
 		String ModuleName="Registration";
 		
 		String username=reader.getCellData(ModuleName,"EmailId" , 2);

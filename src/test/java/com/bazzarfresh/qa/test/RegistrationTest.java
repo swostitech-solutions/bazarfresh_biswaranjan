@@ -4,8 +4,8 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.bazarfresh.qa.commonutility.Xls_Reader;
 import com.bazzarfresh.qa.basetest.Basetest;
+import com.bazzarfresh.qa.commonutility.Xls_Reader;
 import com.bazzarfresh.qa.pages.BazzarFreshRegistrationpage;
 
 /**

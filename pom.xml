@@ -1,18 +1,14 @@
-<project> xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
-	https://maven.apache.org/xsd/maven-4.0.0.xsd"> <modelVersion>4.0.0</modelVersion>
-  <groupId>
-	Bazzerfreshfranework</groupId>
-  <artifactId>Bazzerfreshfranework</artifactId>
-  <version>
-	0.0.1-SNAPSHOT</version>
-  <name>Bazzerfreshfranework</name>
-  <description>
-	Bazzerfreshfranework</description>
-  <dependencies>
-		<!--
-		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>BazarFreshAutomation</groupId>
+	<artifactId>BazarFreshAutomation</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>BazarFreshAutomation</name>
+	<description>BazarFreshAutomation</description>
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
@@ -37,6 +33,6 @@
 			<artifactId>poi</artifactId>
 			<version>5.2.3</version>
 		</dependency>
-	
-  </dependencies>
+		
+	</dependencies>
 </project>
