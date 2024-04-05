@@ -30,7 +30,7 @@ public class LoginTest extends Basetest {
 	}
 	
 	@Test
-	public void VerifyLoginIntoApplication() {
+	public void VerifyLoginIntoApplicationTest() {
 		Xls_Reader reader=new Xls_Reader("V:\\git_automation\\bazarfresh_biswaranjan\\src\\main\\java\\com\\bazzarfresh\\qa\\testdata\\bazarfreshdata.xlsx");
 		String ModuleName="Registration";
 		
