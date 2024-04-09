@@ -204,7 +204,7 @@ public class Basetest {
 	   public static WebDriver takeScreenshotAtEndOfTest() throws IOException {
 		 File scrFile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		 String currentDir=System.getProperty("user.dir");
-		 FileUtils.copyFile(scrFile, new File(currentDir + "/screenshots" + System.currentTimeMillis() + ".png"));
+		 FileUtils.copyFile(scrFile, new File(currentDir + "\\TakeScreenshort.java" + System.currentTimeMillis() + ".png"));
 		return driver;
 		   
 	   }

@@ -1,6 +1,7 @@
 package com.bazzarfresh.qa.test;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -50,9 +51,9 @@ public class RegistrationTest extends Basetest {
 		initialization();
 		Registrationpage=new BazzarFreshRegistrationpage();
 	}
-	@Test(priority = 1)
+	@Test
 	public void verifyRegistrationTest() throws InterruptedException {
-		Xls_Reader reader=new Xls_Reader("C:\\Users\\vicky\\eclipse-workspace\\bazarfreshframework\\src\\main\\java\\com\\bazzarfresh\\qa\\testdata\\bazarfreshdata.xlsx");
+		Xls_Reader reader=new Xls_Reader("V:\\git_automation\\bazarfresh_biswaranjan\\src\\main\\java\\com\\bazzarfresh\\qa\\testdata\\bazarfreshdata.xlsx");
 		String Modulename="Registration";
 		String firstname=reader.getCellData(Modulename,"FIRST NAME" , 2);
 		String lastname=reader.getCellData(Modulename, "LAST NAME", 2);
@@ -68,6 +69,8 @@ public class RegistrationTest extends Basetest {
 		Registrationpage.EnterPhone(telephone);
 		Registrationpage.EnterPassword(password);
 		Registrationpage.EnterConfirmPassword(confirmpassword);
+		Registrationpage.ClickOnterms();
+		Registrationpage.ClickOnContinue();
 		Thread.sleep(5000);
 		
 		String ActualMessage=Registrationpage.VerifyWarningAlert();
@@ -75,10 +78,15 @@ public class RegistrationTest extends Basetest {
 		Assert.assertTrue(ActualMessage.contains(ExpectedMesage), "This Warning Message Is Wrong Expected Warning Is" + " " + ExpectedMesage);
 	}
 	
-	@Test(priority = 2)
+//	@Test(priority = 2)
+//	
+//	public void VerifyLogout() {
+//		Registrationpage.ClickOnLogout();
+//	}
 	
-	public void VerifyLogout() {
-		Registrationpage.ClickOnLogout();
+	@AfterMethod
+	public void tearDown() {
+		driver.quit();
 	}
 
 }

@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.bazzarfresh.qa.basetest.Basetest;
 
 public class BazzarFreshRegistrationpage  extends Basetest{
-	@FindBy(linkText="Singup")
+	@FindBy(linkText="Signup")
 	WebElement Signup;
 	@FindBy(id="input-firstname")
 	WebElement firstname;
@@ -28,8 +28,8 @@ public class BazzarFreshRegistrationpage  extends Basetest{
 	WebElement Continue;
 	@FindBy(xpath = "//*[@class='alert alert-danger alert-dismissible']")
 	WebElement Warningalert;
-	@FindBy(linkText = "Logout")
-	WebElement logout;
+//	@FindBy(linkText = "Logout")
+//	WebElement logout;
 	
 	public BazzarFreshRegistrationpage() {
 		PageFactory.initElements(driver, this);
@@ -70,7 +70,7 @@ public class BazzarFreshRegistrationpage  extends Basetest{
 		return str;
 		}
 	
-	public void ClickOnLogout() {
-		logout.click();
-	}
+//	public void ClickOnLogout() {
+//		logout.click();
+//	}
 }
